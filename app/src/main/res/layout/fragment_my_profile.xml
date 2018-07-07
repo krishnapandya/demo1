@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_profile_screen_name"
+                    style="@style/EditTextStyle"
+                    android:hint="@string/hint_screen_name" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_profile_mobile"
+                    style="@style/EditTextStyle"
+                    android:hint="@string/hint_mobile" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_profile_first_name"
+                    style="@style/EditTextStyle"
+                    android:hint="@string/hint_first_name" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_profile_middle_name"
+                    style="@style/EditTextStyle"
+                    android:hint="@string/hint_middle_name" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_profile_last_name"
+                    style="@style/EditTextStyle"
+                    android:hint="@string/hint_last_name" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spinner_profile_gender"
+                style="@style/EditTextStyle" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_profile_birth_date"
+                    style="@style/EditTextStyle"
+                    android:clickable="true"
+                    android:hint="@string/hint_birth_date" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_profile_birth_place"
+                    style="@style/EditTextStyle"
+                    android:clickable="true"
+                    android:hint="@string/hint_birth_place" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_profile_gotra"
+                    style="@style/EditTextStyle"
+                    android:clickable="true"
+                    android:hint="@string/hint_gotra" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_profile_aadhar_number"
+                    style="@style/EditTextStyle"
+                    android:clickable="true"
+                    android:hint="@string/hint_aadhar_num" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/hint_occupation"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Spinner
+                    android:id="@+id/spinner_occupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/bg_gray_border_transparant"
+                    android:gravity="right|end" />
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_profile_occupation_desc"
+                    style="@style/EditTextStyle"
+                    android:clickable="true"
+                    android:hint="@string/hint_occuptaion_description" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_profile_pincode"
+                    style="@style/EditTextStyle"
+                    android:clickable="true"
+                    android:hint="@string/hint_pincode" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_profile_address"
+                    style="@style/EditTextStyle"
+                    android:clickable="true"
+                    android:hint="@string/hint_address" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_profile_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

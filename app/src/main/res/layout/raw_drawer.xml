@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_drawer_my_profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/iv_drawer_my_profile"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:src="@drawable/ic_profile" />
+
+                <TextView
+                    android:id="@+id/txt_drawer_menu"
+                    style="@style/DrawerItem"
+                    android:text="@string/drawer_my_profile" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_drawer_identity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/iv_drawer_identity"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:src="@drawable/ic_identity" />
+
+                <TextView
+                    android:id="@+id/txt_drawer_identity"
+                    style="@style/DrawerItem"
+                    android:text="@string/drawer_identity" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_drawer_update_avtar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/iv_drawer_update_avtar"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:src="@drawable/ic_update_avtar" />
+
+                <TextView
+                    android:id="@+id/txt_drawer_update_avtar"
+                    style="@style/DrawerItem"
+                    android:text="@string/drawer_update_avtar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_drawer_update_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/iv_drawer_update_password"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:src="@drawable/ic_password" />
+
+                <TextView
+                    android:id="@+id/txt_drawer_update_password"
+                    style="@style/DrawerItem"
+                    android:text="@string/drawer_update_password" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_drawer_logout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/iv_drawer_logout"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:src="@drawable/ic_logout" />
+
+                <TextView
+                    android:id="@+id/txt_drawer_logout"
+                    style="@style/DrawerItem"
+                    android:text="@string/drawer_logout" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
